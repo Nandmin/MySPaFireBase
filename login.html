@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frist WebApp - Registering page</title>
+    <link rel="shortcut icon" type="img/png" href="https://img.icons8.com/office/16/000000/shopping-cart.png">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="styleSheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
+    <!-- <script src="./require.js"></script> -->
+    <!-- <script src="./register.js"></script> -->
+    <!-- <script src="./app.js"></script> -->
+    <!-- <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
+    <!-- <script type="module" src="./bundle.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="table2.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+
+<!-- <script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDltIwb4vC7TAnlKTrM-rJUtskXO50GKBc",
+    authDomain: "erudite-coast-311922.firebaseapp.com",
+    databaseURL: "https://erudite-coast-311922-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "erudite-coast-311922",
+    storageBucket: "erudite-coast-311922.appspot.com",
+    messagingSenderId: "764630626555",
+    appId: "1:764630626555:web:530470b1a338e7b38a005e",
+    measurementId: "G-F7VTVVTC3N"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script> -->
+
+
+    
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="lab la-accusoft"></span> <span> James soft</span>
+            </h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <!-- a>span*2 eredménye: -->
+                    <a href="./index.html" class="active"><span class="las la-igloo"></span>
+                        <span>DashBoard</span></a> 
+                </li>
+                <li>
+                    <a href=""><span class="las la-users"></span>
+                        <span>Custormers</span></a> 
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span>
+                        <span>Projects</span></a> 
+                </li>
+                <li>
+                    <a href=""><span class="las la-shopping-bag"></span>
+                        <span>Orders</span></a> 
+                </li>
+                <li>
+                    <a href=""><span class="las la-receipt"></span>
+                        <span>Invertory</span></a> 
+                </li>
+                <li>
+                    <a href=""><span class="las la-user-circle"></span>
+                        <span>Accounts</span></a> 
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span>
+                        <span>Tasks</span></a> 
+                </li>
+                <li>
+                    <a href="./login.html"><span class="las la-user"></span>
+                        <span>Register</span></a> 
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <div class="header-title">
+                    <label for="nav-toggle">
+                        <span class="las la-bars"></span>
+                    </label>
+
+                    Register page
+                </div>
+            </h2>
+            <!-- keresés mező -->
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Keresés helye...">
+            </div>
+
+            <div class="user-wrapper">
+                <img src="jon.png" width="40px" height="40px" alt="">
+                <div>
+                    <h4>Havas Jon</h4>
+                    <small>Super admin</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <h3>Kérlek add meg az adataid</h3>
+            <br>
+            <div class="loginData">
+                <!-- <input id="loginFirstName" type="text" -->
+                <!-- <form>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="bday">BirthDay:</label>
+                    <input type="date" id="bday" name="bday"><br><br>
+                    <input type="submit" value="Submit" onclick="">
+                  </form> -->
+
+                  <table>
+                      <!-- <thead>
+                        <td>r1</td>
+                        <td>r2</td>
+                        <td>r3</td>
+                        <td>r4</td>
+                        <td>r5</td>
+                      </thead> -->
+                      <tbody>
+                          <tr>
+                              <td><label for="fname">Keresztnév:</label></td>
+                              <td><input type="text" id="fname" name="fname"><br></td>
+                              <td></td>
+                              <td><label for="bday">Születési dátum:</label></td>
+                              <td><input type="date" id="bday" name="bday"><br></td>
+                            </tr>
+                            <tr>
+                                <td><label for="lname">Vezetéknév:</label></td>
+                                <td><input type="text" id="lname" name="lname"><br></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            <tr>
+                                <td><label for="zipCode">Irányítószám:</label></td>
+                                <td><input type="number" id="zipCode" name="ZipCode"><br></td>
+                                <td></td>
+                                <td><label for="city">Település:</label></td>
+                                <td><input type="text" id="city" name="city"><br></td>
+                              </tr>
+                              <tr>
+                                <td><label for="street">Közterület neve:</label></td>
+                                <td><input type="text" id="street" name="street"><br></td>
+                                <td></td>
+                                <td><label for="streetType">Közterület jellege:</label></td>
+                                <td><input type="text" id="streetType" name="streetType"><br></td>
+                              </tr>
+                              <tr>
+                                <td><label for="hNumber">Házszám:</label></td>
+                                <td><input type="number" id="hNumber" name="hNumber"><br></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td><label for="mNumber">Telefonszám:</label></td>
+                                <td><input type="tel" id="mNumber" name="mNumber"><br></td>
+                                <td></td>
+                                <td><label for="email">E-mail:</label></td>
+                                <td><input type="email" id="email" name="email"><br></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td><label for="loginName">Kért login name:</label> </td>
+                                <td><input text="text" id="loginName" name="loginName"><br></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td><label for="password">Jelszó:</label></td>
+                                <td><input type="password" id="password" name="password"><br></td>
+                                <td></td>
+                                <td><label for="password2">Jelszó újra:</label></td>
+                                <td><input type="password" id="password2" name="password2"><br></td>
+                              </tr>
+                      </tbody>                      
+                  </table>
+                  <div class="btnSubmit">
+                    <input type="submit" value="Mentés" onclick="table2()">
+                  </div>
+            </div>
+</table>
+<table id="usersTable"></table>             
+        </main>
+        
+    </div>
+    
+                    
+</body>
+</html>
