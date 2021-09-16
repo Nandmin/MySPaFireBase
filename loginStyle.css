@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 body{
   margin: 0;
   padding: 0;
@@ -5,8 +7,21 @@ body{
   /* background: #34495e; */
   background-color: #191919;
 }
+
+.welcome{
+  color: goldenrod;
+  /* color: #2ecc71; */
+  font-family: 'Dancing Script', cursive;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-size: 40px;
+  
+}
 .box{
-  width: 100%; /* 300px; */
+  width: 300px;
   padding: 40px;
   position: absolute;
   top: 50%;
